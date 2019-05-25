@@ -5,6 +5,10 @@ use App\Room;
   
 class RoomLib
 {
+    public function get_rooms(){
+        $rooms = Room::all();
+        return $rooms;
+    }
 
     public function room_status_update($room, $status)
     {
